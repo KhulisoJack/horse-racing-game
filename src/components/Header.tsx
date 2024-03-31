@@ -9,7 +9,7 @@ const Header: React.FC = () => {
             <nav className="nav-links">
                 <ul>
                     <li><button className="nav-button"><Link to="/">Log In</Link></button></li>
-                    <li><button className="nav-button"><Link to="/race">Register</Link></button></li>
+                    <li><button className="nav-button"><Link to="/Register">Register</Link></button></li>
                 </ul>
             </nav>
         </header>
