@@ -8,8 +8,8 @@ const Header: React.FC = () => {
             <h1 className="logo">Virtual Horse Racing Game</h1>
             <nav className="nav-links">
                 <ul>
-                    <li><Link to="/" className="nav-link">Home</Link></li>
-                    <li><Link to="/race" className="nav-link">Race</Link></li>
+                    <li><button className="nav-button"><Link to="/">Log In</Link></button></li>
+                    <li><button className="nav-button"><Link to="/race">Register</Link></button></li>
                 </ul>
             </nav>
         </header>
