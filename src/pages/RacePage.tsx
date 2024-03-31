@@ -1,4 +1,6 @@
 import React from 'react';
+import Header from '../components/Header';
+
 
 const RacePage: React.FC = () => {
   const handleRaceStart = () => {
@@ -7,6 +9,8 @@ const RacePage: React.FC = () => {
 
   return (
     <div>
+      <Header />
+
       <h2>Race Page</h2>
       <button onClick={handleRaceStart}>Start Race</button>
     </div>
