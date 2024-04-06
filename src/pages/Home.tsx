@@ -12,7 +12,8 @@ const Home: React.FC = () => {
         <p className="description">Experience the thrill of virtual horse racing!</p>
         <Link to="/race" className="start-button">Start Racing</Link>
         <div className="image-container">
-          <img src="/path/to/horse/image" alt="Horse Racing" className="home-image" />
+        <img src="/images/Horse-Races-hero.png" alt="Horse Racing" className="home-image" />
+
         </div>
       </div>
     </div>

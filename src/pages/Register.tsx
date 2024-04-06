@@ -1,9 +1,12 @@
 import React, { useState } from 'react';
 import axios from 'axios';
+import { useNavigate  } from 'react-router-dom';
 import '../styles/Register.css';
 import Header from '../components/Header';
 
+
 const Register: React.FC = () => {
+  const navigate  = useNavigate ();
   // State to store form data
   const [formData, setFormData] = useState({
     username: '',
@@ -31,6 +34,10 @@ const Register: React.FC = () => {
       // Make POST request to backend registration endpoint
       const response = await axios.post('http://localhost:5000/api/newuser/register', formData);
       console.log('Registration successful:', response.data);
+
+      // Redirect to login page with username as query parameter
+      navigate(`/login?username=${formData.username}`);
+
       // Reset form data after successful registration
       setFormData({
         username: '',
